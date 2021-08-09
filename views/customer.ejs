@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+<h1 class="customer_Heading">Customer Information</h1>
+<table class="content-table">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>User Name</th>
+                <th>User Email</th>
+                <th>Amount</th>
+                <th>Action</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <form action="/Transactions" method="post"> -->
+            <% for(i=0 ; i< csData.length ; i++){%>
+                <tr>
+                    <td><%= i+1 %></td>
+                    <td> <a href="/Customer/<%= csData[i].name %>"><%= csData[i].name %> </a> </td>
+                    <td><%= csData[i].email  %></td>
+                    <td><%= csData[i].balance %></td>
+                    <td><button type="text" name="cusName" value="" class="btn cusbutton"> <a href="/Transactions/<%= csData[i].name %>">Transfer</a></button></td>
+                </tr>
+            <% } %>
+            </form>
+            
+        </tbody>
+</table>

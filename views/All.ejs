@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Sender Name</th>
+            <th>Receiver Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for( i=0; i< Ts.length ; i++){ %>
+                    <tr>
+                        <td><%= i+1 %></td>
+                        <td> <%= Ts[i].SName %></td>
+                        <td><%= Ts[i].ReName %></td>
+                        <td><%= Ts[i].SeMoney %></td>
+                        <td><%= Ts[i].Time %></td>
+                    </tr>
+                <% } %>
+        }
+    </tbody>
+</table>

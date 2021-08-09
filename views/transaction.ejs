@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+<div class="OneMem">
+    <h1> <span>Account</span> <span class="OneMemName"><%= memName %></span>  </h1>
+    <p> <span> Mail Id :</span> <span class="OneMemName"> <%= CusInfo.email %></span>  </p>
+    <p>  <span>  Balance :</span><span class="OneMemName"><%= CusInfo.balance %></span> </p>
+</div>
+<div class="transcation_div">
+    <form action="/Transactions" method="post">
+            <h4>Transfer Amount </h4>
+        <label for="">Receiver Name :&nbsp</label>
+        <input type="text" name="resName" placeholder="Enter Receiver Name" required>
+        <label for="">Enter Amount :&nbsp&nbsp&nbsp</label>
+        <input type="text" name="amount" placeholder="Enter Amount" required>
+        <% if(Terr){ %>
+            <% if( Terrmsg == 1 ){ %>
+                <p class="errmsg"> Incorrect Receiver Details</p>
+            <% }else if( Terrmsg == 2){ %>
+                <p class="errmsg"> Insufficent balance </p>
+            <% } else{%>
+                <p></p>
+            <%} %>
+       <% } %>
+        <button type="submit" class="btn">Send Money</button>
+    </form>
+</div>
+
+

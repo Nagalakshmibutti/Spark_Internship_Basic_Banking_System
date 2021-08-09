@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+<div class="transcation_div_1">
+        <form action="/AllTransactions" method="post">
+            <label for="">Sender Name : &nbsp&nbsp&nbsp</label>
+            <input type="text" name="Sname" placeholder="Enter Sender Name" >
+            <label for="">Receiver Name :&nbsp</label>
+            <input type="text" name="Rname" placeholder="Enter Receiver Name">
+            <label for="">Enter Amount :&nbsp&nbsp&nbsp</label>
+            <input type="text" name="money" placeholder="Enter Amount">
+            <% if(errstatus){ %>
+                <% if( errmsg == 1 ){ %>
+                    <p class="errmsg"> Incorrect Sender Details</p>
+                <% }else if ( errmsg == 2){ %>
+                    <p class="errmsg"> Incorrect Receiver Details</p>
+                <% }else{ %>
+                    <p class="errmsg"> Insuffient balance </p>
+                <% } %>
+           <% } %>
+           <button type="submit" class="btn">Send Money</button>
+        </form>
+</div>
+
+

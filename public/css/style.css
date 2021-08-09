@@ -1,0 +1,188 @@
+.customer_Heading{
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+.collapse li a :hover{
+    color: #fafcfc;
+}
+body{
+    font-family: "Montserrat";
+  }
+  p{
+    color: #8f8f8f;
+  }
+  #title-tindog{
+    font-size:2.5rem;
+  }
+  /*    sections */
+  .colored-section{
+    background-color: #15857f;
+    color:white;
+  }  
+  /*navigation*/
+  .navbar-brand{
+    font-family:"Ubuntu";
+    font-size: 2.5rem;
+    font-weight:bold;
+  }
+  .nav-item{
+    padding:0 20px;
+  } 
+  .nav-link{
+    font-family:"Montserrat-light";
+    font-size:1.4rem;
+  }
+  /* Home section styling */
+  img{
+      height: 20rem;
+      width: 20rem;
+  }
+ .welcometext{
+     margin-top: 5rem;
+ }
+ .welcometext button{
+     margin-top: 1rem;
+     border-color: #15857f ;
+ }
+
+ a:hover{
+   text-decoration: none;
+   color: #075a56;
+ }
+
+ /* Footer */
+ footer{
+     margin: auto;
+     margin-top: 11.3rem;
+     height: 4rem;
+     width: 100%;
+     padding: 1.5rem;
+     background-color:#15857f ;
+     color: blanchedalmond;
+     text-align:center;
+ }
+
+ /* Table */
+ .content-table{
+    margin: auto;
+    width: 60rem;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 3rem;
+    font-size: 0.9em;
+    min-width: 500px;
+    font-size: 1.3rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0,1.5);
+ }
+ .content-table button{
+   border-color:#15857f;
+   height: 2rem;
+ }
+     
+.content-table thead tr{
+     background-color:#15857f ;
+     color: #ffff;
+     text-align: center;
+     font-weight: bold;
+}
+.content-table th, .content-table td{
+  padding: 15px 20px;
+}
+.content-table tbody tr{
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+.content-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+  border-bottom: 2px solid #009870;
+}
+.content-table button{
+  background-color:#15857f ;
+  color: white;
+  font-weight: bold;
+}
+.content-table button a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Transaction Css */
+.transcation_div{
+  margin: auto;
+  margin-left: 19rem;
+  margin-top: 2rem;
+  max-width: 24rem;
+  padding: 1.5rem 1rem;
+
+}
+
+.transcation_div_1{
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 24rem;
+  padding: 1.5rem 1rem;
+}
+label{
+  margin: 30px 0px;
+}
+input[type="text"]{
+  width: 13rem;
+  border: 0.14rem solid #15857f;
+  border-radius: 0.4rem;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+input[type="text"]:focus{
+  outline: none;
+  border: 0.14rem solid #15857f;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 20px rgba(0,0,0.2,1.5);
+}
+
+
+.transcation_div button, .transcation_div_1 button{
+  margin-top: 1.5rem;
+  border: 2px solid #15857f;
+  background-color:#15857f ;
+  color:white;
+  font-size: 1rem;
+}
+.transcation_div button:hover{
+  color:white;
+}
+
+/* Customer Details */
+.OneMem{
+  margin: auto;
+  margin-left: 20rem;
+  margin-top : 2rem;
+}
+.OneMemName{
+  color: rgb(18, 102, 102);
+  font-weight: bold;
+}
+.OneMem button{
+  border-color :rgb(17, 122, 122);
+}
+.TransDetails{
+  margin: auto;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  width: 50rem;
+  height: 5rem;
+  padding: 2rem;
+  border: 1px solid rgb(11, 126, 116);
+  color: #15857f;
+  font-weight: bold;
+}
+
+/** Error Message **/
+.errmsg{
+  background-color : rgb(243, 170, 165);
+  color: rgb(255, 17, 9);
+  margin-top: 2rem;
+}
